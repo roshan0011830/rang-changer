@@ -1,0 +1,119 @@
+/* 🖤 Global dark setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: background 0.4s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: black;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00e6e6;
+}
+
+/* 🟦 Container */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: black;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+/* 🎨 Buttons */
+button {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffff, #0077ff);
+  box-shadow: 0 0 10px #00ffff, 0 0 25px #0077ff;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff, 0 0 50px #0077ff, 0 0 100px #00ffff;
+}
+
+/* 🧊 Input field */
+input {
+  padding: 0.9rem 1rem;
+  width: 250px;
+  font-size: 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #00ffff;
+  background: #121212;
+  color: #00ffff;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: small
+}
+
+input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 15px #0077ff, inset 0 0 10px #0077ff;
+}
+
+/* 🟢 Display box */
+#display {
+  margin-top: 10px;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  color: #00ffff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Button glow animation */
+@keyframes neonGlow {
+  0% { box-shadow: 0 0 10px #00ffff, 0 0 20px #0077ff; }
+  50% { box-shadow: 0 0 25px #00ffff, 0 0 50px #0077ff; }
+  100% { box-shadow: 0 0 10px #00ffff, 0 0 20px #0077ff; }
+}
+
+button:active {
+  animation: neonGlow 0.6s ease;
+}
+
+/* 🌈 Small hover color hint */
+button#randomColorBtn {
+  background: linear-gradient(135deg, #ff00ff, #0077ff);
+  box-shadow: 0 0 12px #ff00ff, 0 0 25px #0077ff;
+}
+
+button#applyColorBtn {
+  background: linear-gradient(135deg, #00ff99, #00ffff);
+  box-shadow: 0 0 12px #00ff99, 0 0 25px #00ffff;
+}

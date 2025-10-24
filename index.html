@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rang Changer</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 🧩 Added Google Fonts + Font Awesome for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5bfe2c2844.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>🎨Rang Changer🎨<span style="font-size:1.5rem;"></span></h1>
+
+  <div class="container">
+    <!-- 🎲 Random Color Button -->
+    <button id="randomColorBtn" title="Generate Random Color">
+      <i class="fa-solid fa-shuffle"></i> Random Color
+    </button>
+
+    <!-- 🎨 Input Field -->
+    <div class="input-group">
+      <i class="fa-solid fa-palette" style="color:#00ffff; font-size:1.2rem;"></i>
+      <input type="text" placeholder="Enter Color Name or #HexCode">
+    </div>
+
+    <!-- ✅ Apply Button -->
+    <button id="applyColorBtn" title="Apply the entered color">
+      <i class="fa-solid fa-check"></i> Apply Color
+    </button>
+
+    <!-- 🖥️ Display Current Color -->
+    <div id="display">
+      <i class="fa-solid fa-droplet"></i> Current color: None
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
